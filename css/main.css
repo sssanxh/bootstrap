@@ -7,11 +7,19 @@
       body {
         background: linear-gradient(#e9a514, #5f2409) fixed;
         background-size: cover;
+        width: 100%;
+        min-width: 960px;
+        max-width: 1600px;
+        margin: 0 auto;
       }
 
       header {
 
         font-family: Fixedsys;
+        width: 100%;
+        min-width: 960px;
+        max-width: 1920px;
+        margin: 0 auto;
         
       }
 
@@ -46,11 +54,15 @@
       }
 
       footer {
-        padding: 10px;
         background-color: #333;
         color: #fff;
         text-align: center;
         font-size: 17px;
+        width: 100%;
+        min-width: 960px;
+        max-width: 1920px;
+        margin: 0 auto;
+        flex: 0 0 auto;
         
       }
      
@@ -72,7 +84,8 @@
         padding: 10px;
         margin: 60px;
         text-align: left;
-        width: 1400px;
+        width: 100%;
+        overflow: auto;
 
       }
       
@@ -118,4 +131,23 @@
         position: absolute;
         bottom: 100px;
         left: 950px;
+      }
+
+      #carousel {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .card {
+        width: 75%;
+        min-width: 960px;
+        max-width: 1600px;
+        margin: 0 auto;
+      }
+
+      @media(min-width: 1100px){
+        .carousel-inner img{
+          width: 75%;
+        }
       }
